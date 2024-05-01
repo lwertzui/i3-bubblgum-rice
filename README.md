@@ -3,7 +3,7 @@ feel free to grab, modify and use however u like and if you like it,send me a pi
 
 Includes:  
 -wallpaper  
--polybarconfig  
+-polybar config  
 -i3 config file  
 -picom config  
 -xborders config  
