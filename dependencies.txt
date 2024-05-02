@@ -1,0 +1,8 @@
+polybar  
+rofi  
+i3-gaps
+terminator
+
+##AUR Packages  
+picom-git 
+xborder-git 
