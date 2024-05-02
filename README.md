@@ -8,6 +8,7 @@ Includes:
 -picom config  
 -xborders config  
 -rofi config  
+-terminator config
 
 Will include *SOON*:  
--terminator config
+_nothing to see here,go back up_
