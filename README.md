@@ -11,10 +11,11 @@ Includes:
 -terminator config
 
 Will include *SOON*:  
-_nothing to see here,go back up_
+_nothing to see here,move on :3_
  
  to install:
 
 ```
 cd 'i3-bubblgum-rice'
+./install.sh
 ```
