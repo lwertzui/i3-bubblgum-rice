@@ -1,5 +1,7 @@
 #locations for all the config files  
 i3          |  ~/.config/i3/config
 terminator  |  ~/.config/terminator/config
+polybar     |  ~/.config/polybar/config.ini
 picom       |  ~/.config/picom/config.ini
+rofi        |  ~/.config/rofi/config.rasi
 xborder     |  ~/.config/xborder/config.json
