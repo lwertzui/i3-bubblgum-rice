@@ -5,3 +5,4 @@ terminator
 
 ##AUR Packages  
 picom-git 
+xborder-git 
