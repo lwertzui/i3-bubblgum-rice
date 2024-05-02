@@ -7,6 +7,7 @@ Includes:
 -i3 config file  
 -picom config  
 -xborders config  
+-rofi config  
 
 Will include *SOON*:  
--rofi config
+-terminator config
