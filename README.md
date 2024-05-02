@@ -15,6 +15,6 @@ _nothing to see here,go back up_
  
  to install:
  
-'''
+'''  
 cd 'i3-bubblgum-rice' && ./install.sh
-'''
+'''  
