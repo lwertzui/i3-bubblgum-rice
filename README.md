@@ -17,5 +17,6 @@ _nothing to see here,move on :3_
 
 ```
 cd 'i3-bubblgum-rice'
+chmod +x install.sh
 ./install.sh
 ```
