@@ -14,7 +14,11 @@ Will include *SOON*:
 _nothing to see here,go back up_
  
  to install:
- 
-'''  
-cd 'i3-bubblgum-rice' && ./install.sh
-'''  
+
+```bash
+git clone https://github.com/deter0/xborder
+cd xborder
+chmod +x xborders
+pip install -r requirements.txt
+./xborders --help
+```
