@@ -11,9 +11,9 @@ Includes:
 -terminator config
 
 Will include *SOON*:  
-_nothing to see here,move on :3_
+-install script
  
- to install:
+ (soon) to install:
 
 ```
 cd 'i3-bubblgum-rice'
