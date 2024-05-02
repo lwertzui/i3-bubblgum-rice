@@ -11,12 +11,4 @@ Includes:
 -terminator config
 
 Will include *SOON*:  
--install script
- 
- (soon) to install:
-
-```
-cd 'i3-bubblgum-rice'
-chmod +x install.sh
-./install.sh
-```
+_nothing to see here, move on :3_
