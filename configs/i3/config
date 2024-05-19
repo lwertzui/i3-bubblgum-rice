@@ -209,7 +209,7 @@ gaps inner 10
 #smart_gaps on
 
 # borders
-exec --no-startup-id /home/wertzui/.config/xborder/xborders -c /home/wertzui/.config/xborder/config.json
+exec_always --no-startup-id /home/wertzui/.config/xborders/xborders -c /home/wertzui/.config/xborders/config.json
 
 
 
