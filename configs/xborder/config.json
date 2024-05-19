@@ -1,6 +1,6 @@
 {
     "border-rgba": "#8B4393",
-    "border-radius": 10,
+    "border-radius": 12,
     "border-width": 3,
     "border-mode": "outside",
     "disable-version-warning": false,
@@ -8,8 +8,5 @@
     "positive-x-offset": 0,
     "positive-y-offset": 0,
     "negative-x-offset": 0,
-    "negative-y-offset": 17
+    "negative-y-offset": 0
 }
-
-
-

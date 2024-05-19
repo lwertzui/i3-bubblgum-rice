@@ -54,7 +54,7 @@ bindsym $mod+Return exec terminator
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id rofi -show run
+bindsym $mod+d exec --no-startup-id rofi -show
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -113,7 +113,7 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1: "
+set $ws1 "1: "
 set $ws2 "2"
 set $ws3 "3:  Spotify"
 set $ws4 "4: VMM"
@@ -209,12 +209,15 @@ gaps inner 10
 #smart_gaps on
 
 # borders
-exec_always --no-startup-id /home/wertzui/.config/xborder/xborders -c /home/wertzui/.config/xborder/config.json
+exec --no-startup-id /home/wertzui/.config/xborder/xborders -c /home/wertzui/.config/xborder/config.json
 
 
 
-#Kb- layout
+#Kb layout
 exec --no-startup-id setxkbmap -layout de
+
+#Stop Window titlebars
+new_window none
 
 # Color shemes for windows
 set $bgcolor    #8B4393 

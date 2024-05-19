@@ -8,7 +8,7 @@
     foreground_color = "#77767b"
     show_titlebar = False
     scrollbar_position = hidden
-    palette = "#2e3436:#00cdf7:#1b7e92:#8b4393:#b043d4:#c061cb:#06989a:#d3d7>
+    palette = "#2e3436:#00cdf7:#1b7e92:#8b4393:#b043d4:#c061cb:#06989a:#d3d7cf:#555753:#00cdf7:#1b7e92:#c061cb:#c061cb:#ad7fa8:#34e2e2:#eeeeec"
     bold_is_bright = True
     title_transmit_fg_color = "#c0bebf"
     title_transmit_bg_color = "#1b7e92"
@@ -24,6 +24,3 @@
       type = Terminal
       parent = window0
 [plugins]
-
-
-
