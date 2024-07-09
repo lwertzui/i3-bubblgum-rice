@@ -9,8 +9,8 @@ Includes:
 -xborders config  
 -rofi config  
 -terminator config
--install sript
--sync script, if you want to create your own fork with your own rice
+-install sript  
+-sync script, if you want to create your own fork with your own rice  
 
 Will include *SOON*:  
 _nothing to see here, move on :3_
