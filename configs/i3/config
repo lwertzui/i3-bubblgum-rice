@@ -14,6 +14,8 @@ font pango:Ubuntu Regular 8
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 
+exec_always --no-startup-id rfkill unblock bluetooth
+
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
@@ -21,12 +23,11 @@ exec --no-startup-id dex --autostart --environment i3
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
-# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
+# xss-lock grabs a logind suspend inhibit lock and will use i3 lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 #Unimatrix Screensaver 
-exec_always --no-startup-id ~/.config/scripts/screensaver.sh
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
@@ -138,10 +139,12 @@ bindsym $mod+0 workspace number $ws10
 
 # Allocate applications to workspaces
 for_window [class="Spotify"] move to workspace $ws3
-for_window [class="Pavucontrol"] move to workspace $ws3
+for_window [class="pavucontrol"] move to workspace $ws3
 for_window [class="Virt-manager"] move to workspace $ws4
 for_window [class="VirtualBox Manager"] move to workspace $ws4
 for_window [class="kicad"] move to workspace $ws5
+for_window [class="Repetier-Server-Monitor"] move to workspace $ws6
+
 
 
 # move focused container to workspace
@@ -209,7 +212,7 @@ gaps inner 10
 #smart_gaps on
 
 # borders
-exec_always --no-startup-id /home/wertzui/.config/xborders/xborders -c /home/wertzui/.config/xborders/config.json
+exec_always --no-startup-id /home/wertzui/.config/xborder/xborders -c /home/wertzui/.config/xborder/config.json
 
 
 
@@ -234,7 +237,7 @@ client.focused_inactive $in-bgcolor     $in-bgcolor     $in-text        $in-bgco
 client.urgent           $u-bgcolor      $u-bgcolor      $text           $u-bgcolor
 
 # Shortcut for Lockscreen
-bindsym $mod+x exec /home/$USER/.config/scripts/lock
+bindsym $mod+x exec i3lock
 
 # Key bindings Fn keys
 bindsym XF86AudioPlay exec playerctl play-pause
@@ -245,9 +248,6 @@ bindsym XF86MonBrightnessDown exec brightnessctl s 10%-
 bindsym XF86MonBrightnessUp exec brightnessctl s +10%
 bindsym XF86Calculator exec kcalc
 bindsym Help exec reboot
-
-# For screenshots install :
-# apt-get install maim xclip copyq
 
 ##  Screenshots in files
 bindsym Print exec --no-startup-id maim --format=png "/home/$USER/Pictures/screenshots/all/screenshot-$(date -u +'%Y%m%d-%H%M%SZ')-all.png"
@@ -261,8 +261,10 @@ bindsym Ctrl+Shift+Print exec --no-startup-id maim --format=png --select | xclip
 
 ##autostart applications
 exec_always --no-startup-id spotify
-exec_always --no-startup-id pavucontrol
+exec --no-startup-id pavucontrol
+exec_always --no-startup-id /bin/Repetier-Server\ Monitor-1.4.7.AppImage
+
 #exec_always --no-startup-id
 
-#polybar launch script
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+#polybar
+exec --no-startup-id polybar
