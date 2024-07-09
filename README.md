@@ -3,7 +3,7 @@ feel free to grab, modify and use however u like and if you like it,send me a pi
 
 to install run in your home directory:  
 ```
-bash <(curl -sSL https://github.com/lwertzui/i3-bubblgum-rice/blob/master/.netinst.sh)
+bash <(curl -sSL https://raw.githubusercontent.com/lwertzui/i3-bubblgum-rice/master/.netinst.sh)
 ```
 
 Includes:  
