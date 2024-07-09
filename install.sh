@@ -11,6 +11,7 @@ copy_file() {
     # Copy the file
     if cp "$src" "$dest"; then
         echo "Copying $(basename "$src") to $(dirname "$dest")"
+	echo
         echo "--> done"
     else
         echo "Failed to copy $(basename "$src")"
