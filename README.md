@@ -7,7 +7,6 @@ bash <(curl -sSL https://raw.githubusercontent.com/lwertzui/i3-bubblgum-rice/mas
 ```
 
 Includes:  
--wallpaper  
 -polybar config  
 -i3 config file  
 -picom config  
@@ -18,4 +17,5 @@ Includes:
 -sync script, if you want to create your own fork with your own rice  
 
 Will include *SOON*:  
-_nothing to see here, move on :3_
+-wallpaper  
+#_nothing to see here, move on :3_
