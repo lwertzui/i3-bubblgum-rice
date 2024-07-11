@@ -201,7 +201,7 @@ bindsym $mod+r mode "resize"
 #}
 
 # Display Wallpaper
-exec_always feh --bg-fill /usr/share/backgrounds/ezgif-3-6089766e48.png
+exec_always feh --bg-fill $HOME/.config/wallpaper/wallpaper.png
 
 # Transparency with picom compositor
 exec_always picom -f
