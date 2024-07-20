@@ -228,7 +228,8 @@ set $in-bgcolor #363636
 set $text       #ffffff
 set $u-bgcolor  #C061CB
 #####ff0000
-set $indicator  #a8a3c1
+set $indicator 
+ #a8a3c1
 set $in-text    #969696
 #                       border          background      text            indicator (a line which shows where the next window will be placed)
 client.focused          $bgcolor        $bgcolor        $text           $indicator
@@ -246,6 +247,11 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86MonBrightnessDown exec brightnessctl s 10%-
 bindsym XF86MonBrightnessUp exec brightnessctl s +10%
+bindsym Ctrl+XF86MonBrightnessDown exec brightnessctl s 5%-
+bindsym Ctrl+XF86MonBrightnessUp exec brightnessctl s +5%
+bindsym Shift+Ctrl+XF86MonBrightnessDown exec brightnessctl s 1%-
+bindsym Shift+Ctrl+XF86MonBrightnessUp exec brightnessctl s +1%
+
 bindsym XF86Calculator exec kcalc
 bindsym Help exec reboot
 
