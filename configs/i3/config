@@ -251,7 +251,6 @@ bindsym Ctrl+XF86MonBrightnessDown exec brightnessctl s 5%-
 bindsym Ctrl+XF86MonBrightnessUp exec brightnessctl s +5%
 bindsym Shift+Ctrl+XF86MonBrightnessDown exec brightnessctl s 1%-
 bindsym Shift+Ctrl+XF86MonBrightnessUp exec brightnessctl s +1%
-
 bindsym XF86Calculator exec kcalc
 bindsym Help exec reboot
 
@@ -264,6 +263,9 @@ bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/$(d
 bindsym Ctrl+Print exec --no-startup-id maim | xclip -selection clipboard -t image/png
 bindsym Ctrl+$mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
 bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
+
+#Picom toggle
+exec $mod+G ~/config/scripts/toggle_picom.sh
 
 ##autostart applications
 exec_always --no-startup-id spotify
