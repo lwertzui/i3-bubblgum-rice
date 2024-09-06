@@ -1,7 +1,7 @@
 i am finished with my first i3-Gaps (ofc) rice with a bubblegum theme, 
 feel free to grab, modify and use however u like and if you like it,send me a pic of you using it on Discord (.wertzui)
 sc:
-![screenshot](./pictures/screenshot.png)
+![screenshot](./pictures/desktop.png)
 
 to install run in your home directory:  
 ```
